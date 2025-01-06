@@ -117,7 +117,7 @@ if st.button("질문 전송 🚀"):
         st.session_state["messages"].append({"role": "user", "content": user_input})
 
         response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4o",
             messages=st.session_state["messages"]
         )
         reply = response.choices[0].message.content
