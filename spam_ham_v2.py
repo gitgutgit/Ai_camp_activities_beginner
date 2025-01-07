@@ -60,12 +60,13 @@ new_texts = [
     "오늘 날씨 좋으면 쇼핑가자",  # 8.ham-like
     "Don't forget to bring the report to the meeting tomorrow.",  # 9.ham-like
     "당신의 계정이 해킹되었습니다. 지금 복구하세요!",  # 10.spam-like
+    "안녕 나는 지금 코널스톤에 갇혀있어 살려줘"
 ]
 
 # 정답 레이블
 answers = [
     "spam", "ham", "spam", "ham", "spam",  # 1,2,3,4,5
-    "spam", "ham", "ham", "ham", "spam",      # 6,7,8,9,10
+    "spam", "ham", "ham", "ham", "spam","ham"     # 6,7,8,9,10
 ]
 
 # (8) 예측 및 정답률 계산
