@@ -7,13 +7,13 @@ from sklearn.naive_bayes import MultinomialNB
 # 틀리게 분류되어있는것도 있으니 고치세요!, 주석으로 된걸 완성해보세요
 train_data = [
     ("무료 쿠폰이 준비되었습니다. 지금 클릭하세요!", "spam"),
-    ("오늘 같이 저녁 먹으러 갈래요?", "spam"),
+    ("오늘 같이 저녁 먹으러 갈래요?", "ham"),
     ("지금 바로 구매 시 50% 할인 혜택을 드립니다!", "spam"),
     ("내일 모임에 참석 가능하신가요?", "ham"),
     ("한정 이벤트! 지금 신청하면 특별한 선물을 드립니다!", "spam"),
   #  ("지금 가입하면 무료 포인트를 제공합니다!", ""),
     ("안녕하세요. 오랜만에 연락드려요. 잘 지내시죠?", "ham"),
-    ("보고서를 오늘까지 제출 부탁드립니다.", "spam"),
+    ("보고서를 오늘까지 제출 부탁드립니다.", "ham"),
     #("축하합니다! 당첨되셨습니다. 지금 바로 확인하세요!", ""),
     ("오늘 날씨가 너무 좋네요. 산책하러 갈래요?", "ham"),
 ]
@@ -60,7 +60,7 @@ st.table(train_df)
 st.subheader("테스트 결과 (Test Data)")
 test_results = pd.DataFrame({
     "문장": test_df["text"],
-    "AI예측": test_predictions,
+    "예측AI": test_predictions,
     "실제정답": test_df["label"],
 })
 st.table(test_results)
